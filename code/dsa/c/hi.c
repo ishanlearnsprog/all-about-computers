@@ -1,6 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-    printf("Hi Ishan\n");
+int main()
+{
+    int i = 1;
+    printf("%llu", sizeof(i));
     return 0;
 }
