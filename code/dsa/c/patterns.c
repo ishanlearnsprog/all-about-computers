@@ -11,13 +11,10 @@
 
 */
 
-void pattern1()
-{
+void pattern1() {
     int r = 5, c = 5, i, j;
-    for (i = 0; i < r; i++)
-    {
-        for (j = 0; j < r; j++)
-        {
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < r; j++) {
             printf("%c", '*');
         }
         printf("\n");
@@ -34,13 +31,10 @@ void pattern1()
 
 */
 
-void pattern2()
-{
+void pattern2() {
     int s = 5, i, j;
-    for (i = 0; i < s; i++)
-    {
-        for (j = 0; j < i + 1; j++)
-        {
+    for (i = 0; i < s; i++) {
+        for (j = 0; j < i + 1; j++) {
             printf("%c", '*');
         }
         printf("\n");
@@ -57,13 +51,10 @@ void pattern2()
 
 */
 
-void pattern3()
-{
+void pattern3() {
     int r = 5, i, j;
-    for (i = 0; i < r; i++)
-    {
-        for (j = 0; j < i + 1; j++)
-        {
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < i + 1; j++) {
             printf("%d", (j + 1));
         }
         printf("\n");
@@ -80,13 +71,10 @@ void pattern3()
 
 */
 
-void pattern4()
-{
+void pattern4() {
     int s = 5, i, j;
-    for (i = 0; i < s; i++)
-    {
-        for (j = 0; j < i + 1; j++)
-        {
+    for (i = 0; i < s; i++) {
+        for (j = 0; j < i + 1; j++) {
             printf("%d", i + 1);
         }
         printf("\n");
@@ -103,13 +91,10 @@ void pattern4()
 
 */
 
-void pattern5()
-{
+void pattern5() {
     int s = 5, i, j;
-    for (i = s; i > 0; i--)
-    {
-        for (j = 0; j < i; j++)
-        {
+    for (i = s; i > 0; i--) {
+        for (j = 0; j < i; j++) {
             printf("%c", '*');
         }
         printf("\n");
@@ -129,10 +114,8 @@ void pattern5()
 void pattern6()
 {
     int s = 5, i, j;
-    for (i = 5; i > 0; i--)
-    {
-        for (j = 1; j < i + 1; j++)
-        {
+    for (i = 5; i > 0; i--) {
+        for (j = 1; j < i + 1; j++) {
             printf("%d", j);
         }
         printf("\n");
@@ -149,21 +132,16 @@ void pattern6()
 
 */
 
-void pattern7()
-{
+void pattern7() {
     int s = 5, i, j, k, l;
-    for (i = 0; i < 5; i++)
-    {
-        for (j = s - i - 1; j > 0; j--)
-        {
+    for (i = 0; i < 5; i++) {
+        for (j = s - i - 1; j > 0; j--) {
             printf(" ");
         }
-        for (k = 0; k < i + 1; k++)
-        {
+        for (k = 0; k < i + 1; k++) {
             printf("*");
         }
-        for (l = 0; l < i; l++)
-        {
+        for (l = 0; l < i; l++) {
             printf("*");
         }
         printf("\n");
@@ -180,21 +158,16 @@ void pattern7()
 
 */
 
-void pattern8()
-{
+void pattern8() {
     int s = 5, i, j, k, l;
-    for (i = 0; i < s; i++)
-    {
-        for (j = 0; j < i; j++)
-        {
+    for (i = 0; i < s; i++) {
+        for (j = 0; j < i; j++) {
             printf(" ");
         }
-        for (k = s - i; k > 0; k--)
-        {
+        for (k = s - i; k > 0; k--) {
             printf("*");
         }
-        for (l = s - i - 1; l > 0; l--)
-        {
+        for (l = s - i - 1; l > 0; l--) {
             printf("*");
         }
         printf("\n");
@@ -218,34 +191,26 @@ void pattern8()
 void pattern9()
 {
     int s = 5, i, j, k, l;
-    for (i = 0; i < 5; i++)
-    {
-        for (j = s - i - 1; j > 0; j--)
-        {
+    for (i = 0; i < 5; i++) {
+        for (j = s - i - 1; j > 0; j--) {
             printf(" ");
         }
-        for (k = 0; k < i + 1; k++)
-        {
+        for (k = 0; k < i + 1; k++) {
             printf("*");
         }
-        for (l = 0; l < i; l++)
-        {
+        for (l = 0; l < i; l++) {
             printf("*");
         }
         printf("\n");
     }
-    for (i = 1; i < s; i++)
-    {
-        for (j = 0; j < i; j++)
-        {
+    for (i = 1; i < s; i++) {
+        for (j = 0; j < i; j++) {
             printf(" ");
         }
-        for (k = s - i; k > 0; k--)
-        {
+        for (k = s - i; k > 0; k--) {
             printf("*");
         }
-        for (l = s - i - 1; l > 0; l--)
-        {
+        for (l = s - i - 1; l > 0; l--) {
             printf("*");
         }
         printf("\n");
@@ -281,22 +246,17 @@ void pattern9()
 
 */
 
-void pattern22()
-{
+void pattern22() {
     int s = 4, i, j;
     int total = 2 * s - 1;
-    for (i = 0; i < total; i++)
-    {
+    for (i = 0; i < total; i++) {
         int r = abs(s - 1 - i);
-        for (j = 0; j < total; j++)
-        {
+        for (j = 0; j < total; j++) {
             int c = abs(s - j - 1);
-            if (c > r)
-            {
+            if (c > r) {
                 printf("%d", c + 1);
             }
-            else
-            {
+            else {
                 printf("%d", r + 1);
             }
         }
@@ -304,8 +264,7 @@ void pattern22()
     }
 }
 
-int main()
-{
+int main() {
 
     printf("\nPattern 1\n");
     pattern1();
