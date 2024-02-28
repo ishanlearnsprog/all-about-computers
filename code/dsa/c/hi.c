@@ -1,5 +1,10 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <limits.h>
+
+#define MAX_LIB_SIZE 10
+
+// C Basics -- Start
 
 /*
 
@@ -32,7 +37,48 @@ void primary_data_types() {
 
 }
 
+// C Basics -- End
+
+// Structs, Unions & Pointers
+
+typedef struct {
+    char *name;
+    bool is_robot;
+    union {
+        char *personality;
+        int firmware_version;
+    };
+} charachter;
+
+void print_charachter(charachter* c) {
+    printf("Charachter: %s\n", c->name);
+    if (c->is_robot) {
+        printf("Version: %i\n", c->firmware_version);
+    } else {
+        printf("Personality: %s\n", c->personality);
+    }
+    printf("\n");
+}
+
+
+void create_charachter() {
+    charachter hansolo;
+    charachter r2d2;
+    
+    hansolo.name = "Han Solo";
+    hansolo.is_robot = false;
+    hansolo.personality = "Scruffy-looking Nerfherder";
+    
+    r2d2.name = "R2";
+    r2d2.is_robot = true;
+    r2d2.firmware_version = 42;
+
+    print_charachter(&hansolo);
+    print_charachter(&r2d2);
+}
+
 int main() {
-    primary_data_types();
+    // primary_data_types();
+    create_charachter();
     return 0;
 }
