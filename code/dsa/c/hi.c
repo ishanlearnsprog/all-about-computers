@@ -39,7 +39,7 @@ void primary_data_types() {
 
 // C Basics -- End
 
-// Structs, Unions & Pointers
+// Structs, Unions & Pointers - Jacob Sorber Example -- START
 
 typedef struct {
     char *name;
@@ -60,7 +60,6 @@ void print_charachter(charachter* c) {
     printf("\n");
 }
 
-
 void create_charachter() {
     charachter hansolo;
     charachter r2d2;
@@ -76,6 +75,8 @@ void create_charachter() {
     print_charachter(&hansolo);
     print_charachter(&r2d2);
 }
+
+// Structs, Unions & Pointers - Jacob Sorber Example -- END
 
 int main() {
     // primary_data_types();
